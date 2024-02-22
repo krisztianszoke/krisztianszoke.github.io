@@ -1,5 +1,5 @@
 ## To Do List
-- [ ] Theme (background, colors, animations (some stars)
+- [x] Theme (background, colors, animations (some stars)
 - [ ] Template creation
 - [ ] Configuration
 - [ ] Layout planning
