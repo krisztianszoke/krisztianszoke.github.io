@@ -1,7 +1,7 @@
 ## To Do List
 - [x] Theme (background, colors, animations (some stars)
-- [ ] Template creation
-- [ ] Configuration
+- [x] Template creation
+- [x] Configuration
 - [ ] Layout planning
   - [ ] Menubar
   - [ ] Language selector
