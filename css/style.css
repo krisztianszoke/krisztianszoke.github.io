@@ -8,6 +8,10 @@ body {
    overflow-x: hidden;
 }
 
+html{
+   scroll-behavior: smooth;
+}
+
 #hero {
    display: flex;
    align-items: center;
