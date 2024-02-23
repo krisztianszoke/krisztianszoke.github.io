@@ -17,52 +17,206 @@
 </head>
 
 <body class="mx-auto">
-   <main class="mx-auto">
-      <div id="hero">
-         <div class="flex flex-col w-full">
-         <!-- NAVBAR -->
-         <nav class="bg-white border-gray-200 dark:bg-gray-900 mx-auto">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+
+   <div id="hero">
+      <p class="text-center text-8xl text-slate-100">BLUESTELLAS</p>
+   </div>
+
+   <header class="bg-white fixed top-0 w-full shadow-md">
+      <nav class="container mx-auto px-6 py-3">
+         <div class="flex justify-between items-center">
             <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                <!-- WE SHOULD GET THE LOGO AS SOON AS POSSIBLE  -->
-                  <img src="assets/images/logo.png" class="h-8" alt="Logo" /> 
+               <img src="assets/images/logo.png" class="h-8" alt="Logo" />
             </a>
-            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-                  <span class="sr-only">Open main menu</span>
-                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                  </svg>
+            <button data-collapse-toggle="navbar-default" type="button"
+               class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+               aria-controls="navbar-default" aria-expanded="false">
+               <span class="sr-only">Open main menu</span>
+               <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                     d="M1 1h15M1 7h15M1 13h15" />
+               </svg>
             </button>
+
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-               <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+               <ul
+                  class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 ">
                   <li>
-                  <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+                     <a href="#"
+                        class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white "
+                        aria-current="page">Home</a>
                   </li>
                   <li>
-                  <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                     <a href="#services"
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white">Services</a>
                   </li>
                   <li>
-                     <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                     <a href="#"
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white">About</a>
                   </li>
                   <li>
-                     <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">News</a>
+                     <a href="#"
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white">News</a>
                   </li>
                   <li>
-                  <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                     <a href="#"
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white">Contact</a>
                   </li>
-                  <!-- LANG SELECTOR -->
+                  <!-- LANG -->
+                  <div>
+
+                  </div
+                     class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white">
+                  <button id="lang_button" type="button" data-dropdown-toggle="language-dropdown-menu">
+                     Language
+                  </button>
+                  <!-- LANG Dropdown -->
+                  <div
+                     class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
+                     id="language-dropdown-menu">
+                     <ul class="py-2 font-medium" role="none">
+                        <li>
+                           <a id="lang-en" href="#"
+                              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                              role="menuitem">
+                              <div class="inline-flex items-center">
+                                 <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="#BD3D44" fill-rule="evenodd"
+                                       d="M0 0h972.8v39.4H0Zm0 78.8h972.8v39.4H0Zm0 78.7h972.8V197H0Zm0 78.8h972.8v39.4H0Zm0 78.8h972.8v39.4H0Zm0 78.7h972.8v39.4H0Zm0 78.8h972.8V512H0Z">
+                                    </path>
+                                    <path fill="#FFF" fill-rule="evenodd"
+                                       d="M0 39.4h972.8v39.4H0Zm0 78.8h972.8v39.3H0Zm0 78.7h972.8v39.4H0Zm0 78.8h972.8V315H0Zm0 78.8h972.8v39.3H0Zm0 78.7h972.8v39.4H0Z">
+                                    </path>
+                                    <path fill="#192F5D" fill-rule="evenodd" d="M0 0h389.1v275.7H0Z"></path>
+                                    <path fill="#FFF" fill-rule="evenodd"
+                                       d="M32.3 11.8l4 11h11l-9.1 6.7 3.5 10.7 -9.4-6.7 -8.7 6.7 3.6-10.7 -9.5-6.7h11.8Zm65 0l3.5 11h11.4l-9.4 6.7 4 10.7 -9.5-6.7 -9.5 6.7 4-10.7 -9.5-6.7h11.4Zm65 0l3.5 11h11.4l-9.4 6.7 4 10.7 -9.5-6.7 -9.5 6.7 4-10.7 -9.5-6.7h11.4Zm64.6 0l3.9 11h11l-9 6.7 3.5 10.7 -9.4-6.7 -9.1 6.7 3.5-10.7 -9.4-6.7h11.8Zm65 0l3.5 11h11.4l-9.4 6.7 3.9 10.7 -9.9-6.7 -9 6.7 3.5-10.7 -9.4-6.7h11.4Zm65 0l3.5 11h11.4l-9.5 6.7 4 10.7 -9.5-6.7 -9.4 6.7 4-10.7 -9.5-6.7h11.4Zm-292 27.6l3.6 11H80l-9.5 6.7 4 10.6L65 61l-9.5 6.7 4-10.6 -9.5-6.7h11.4Zm64.7 0l4 11h11l-9.1 6.7 3.5 10.6 -9.4-6.7 -9 6.7 3.5-10.6 -9.5-6.7h11.8Zm65 0l3.5 11h11.4l-9.4 6.7 4 10.6 -9.5-6.7 -9.5 6.7 4-10.6 -9.5-6.7H191Zm65 0l3.5 11h11.4l-9.4 6.7 3.9 10.6 -9.5-6.7 -9.4 6.7 4-10.6 -9.5-6.7H256Zm64.5 0l4 11h10.6l-9 6.7 3.5 10.6 -9.5-6.7 -9 6.7 3.5-10.6 -9.4-6.7h11.8ZM32.7 67l3.1 11h11.9l-9.5 6.7 3.5 10.6 -9.4-6.7 -8.7 6.7 3.6-10.6 -9.5-6.7h11.8Zm64.6 0l3.5 11h11.4l-9 6.7 3.5 10.6 -9.4-6.7 -9 6.7 3.5-10.6 -9.5-6.7h11.4Zm65 0l3.5 11h11.4l-9.4 6.7 4 10.6 -9.5-6.7 -9.5 6.7 4-10.6 -9.5-6.7h11.4Zm64.6 0l3.9 11h11l-9 6.7 3.5 10.6 -9.4-6.7 -9.1 6.7 3.5-10.6L212 78h11.8Zm65 0l3.5 11h11.4l-9 6.7 3.5 10.6 -9.5-6.7 -9 6.7 3.5-10.6L277 78h11.4Zm65 0l3.5 11h11.4l-9.5 6.7 4 10.6 -9.5-6.7 -9.4 6.7 4-10.6 -9.5-6.7h11.4Zm-292 27.5l3.6 11H80l-9.5 6.7 4 10.7 -9.5-6.7 -9.5 6.7 4-10.7 -9.5-6.6h11.4Zm64.7 0l4 11h11l-9.1 6.7L139 123l-9.4-6.7 -9 6.7 3.5-10.7 -9.5-6.6h11.8Zm65 0l3.5 11h11.4l-9 6.7L204 123l-9.4-6.7 -9.1 6.7 3.5-10.7 -9.4-6.6H191Zm65 0l3.5 11h11.4l-9.4 6.7L269 123l-9.5-6.7 -9.4 6.7 4-10.7 -9.5-6.6H256Zm64.5 0l4 11h10.6l-9 6.7 3.5 10.7 -9.5-6.7 -9 6.7 3.5-10.7 -9.4-6.6h11.8ZM32.7 122.1l3.1 11h11.9l-9.5 6.7 3.5 10.7 -9.4-6.7 -8.7 6.7 3.6-10.7 -9.5-6.7h11.8Zm64.6 0l3.5 11h11.4l-9 6.7 3.5 10.7 -9.4-6.7 -9 6.7 3.5-10.7 -9.5-6.7h11.4Zm65 0l3.5 11h11.4l-9.4 6.7 4 10.7 -9.5-6.7 -9.5 6.7 4-10.7 -9.5-6.7h11.4Zm64.6 0l3.9 11h11l-9 6.7 3.5 10.7 -9.4-6.7 -9.1 6.7 3.5-10.7 -9.4-6.7h11.8Zm65 0l3.5 11h11.4l-9 6.7 3.5 10.7 -9.5-6.7 -9 6.7 3.5-10.7 -9.4-6.7h11.4Zm65 0l3.5 11h11.4l-9.5 6.7 4 10.7 -9.5-6.7 -9.4 6.7 4-10.7 -9.5-6.7h11.4Zm-292 27.6l3.6 11H80l-9.5 6.7 4 10.6 -9.5-6.7 -9.5 6.7 4-10.6 -9.5-6.7h11.4Zm64.7 0l4 11h11l-9.1 6.7L139 178l-9.4-6.7 -9 6.7 3.5-10.6 -9.5-6.7h11.8Zm65 0l3.5 11h11.4l-9 6.7L204 178l-9.4-6.7 -9.1 6.7 3.5-10.6 -9.4-6.7H191Zm65 0l3.5 11h11.4l-9.4 6.7L269 178l-9.5-6.7 -9.4 6.7 4-10.6 -9.5-6.7H256Zm64.5 0l4 11h10.6l-9 6.7 3.5 10.6 -9.5-6.7 -9 6.7 3.5-10.6 -9.4-6.7h11.8ZM32.7 177.2l3.1 11h11.9l-9.5 6.8 3.5 10.6 -9.4-6.7 -8.7 6.7 3.6-10.6 -9.5-6.7h11.8Zm64.6 0l3.5 11h11.4l-9 6.8 3.5 10.6 -9.4-6.7 -9 6.7 3.5-10.6 -9.5-6.7h11.4Zm65 0l3.5 11h11.4l-9.4 6.8 4 10.6 -9.5-6.7 -9.5 6.7 4-10.6 -9.5-6.7h11.4Zm64.6 0l3.9 11h11l-9 6.8 3.5 10.6 -9.4-6.7 -9.1 6.7 3.5-10.6 -9.4-6.7h11.8Zm65 0l3.5 11h11.4l-9 6.8 3.5 10.6 -9.5-6.7 -9 6.7 3.5-10.6 -9.4-6.7h11.4Zm65 0l3.5 11h11.4l-9.5 6.8 4 10.6 -9.5-6.7 -9.4 6.7 4-10.6 -9.5-6.7h11.4Zm-292 27.6l3.6 11H80l-9.5 6.7 4 10.7 -9.5-6.7 -9.5 6.7 4-10.7 -9.5-6.7h11.4Zm64.7 0l4 11h11l-9.1 6.7 3.5 10.7 -9.4-6.7 -9 6.7 3.5-10.7 -9.5-6.7h11.8Zm65 0l3.5 11h11.4l-9 6.7 3.5 10.7 -9.4-6.7 -9.1 6.7 3.5-10.7 -9.4-6.7H191Zm65 0l3.5 11h11.4l-9.4 6.7 3.9 10.7 -9.5-6.7 -9.4 6.7 4-10.7 -9.5-6.7H256Zm64.5 0l4 11h10.6l-9 6.7 3.5 10.7 -9.5-6.7 -9 6.7 3.5-10.7 -9.4-6.7h11.8ZM32.7 232.4l3.1 11h11.9l-9.5 6.7 3.5 10.6 -9.4-6.7 -8.7 6.7 3.6-10.6 -9.5-6.7h11.8Zm64.6 0l3.5 11h11.4l-9 6.7 3.5 10.6 -9.4-6.7 -9 6.7 3.5-10.6 -9.5-6.7h11.4Zm65 0l3.5 11h11.4l-9.4 6.7 4 10.6 -9.5-6.7 -9.5 6.7 4-10.6 -9.5-6.7h11.4Zm64.6 0l3.9 11h11l-9 6.7 3.5 10.6 -9.4-6.7 -9.1 6.7 3.5-10.6 -9.4-6.7h11.8Zm65 0l3.5 11h11.4l-9 6.7 3.5 10.6 -9.5-6.7 -9 6.7 3.5-10.6 -9.4-6.7h11.4Zm65 0l3.5 11h11.4l-9.5 6.7 4 10.6 -9.5-6.7 -9.4 6.7 4-10.6 -9.5-6.7h11.4Z">
+                                    </path>
+                                 </svg>
+                                 English
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a id="lang-de" href="#"
+                              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                              role="menuitem">
+                              <div class="inline-flex items-center">
+                                 <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512">
+                                    <path fill="#ffce00" d="M0 341.3h512V512H0z" />
+                                    <path d="M0 0h512v170.7H0z" />
+                                    <path fill="#d00" d="M0 170.7h512v170.6H0z" />
+                                 </svg>
+                                 Deutsch
+
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a id="lang-hu" href="#"
+                              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                              role="menuitem">
+                              <div class="inline-flex items-center">
+                                 <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="#FFF" fill-rule="evenodd" d="M512 512H0V0h512Z"></path>
+                                    <path fill="#388D00" fill-rule="evenodd" d="M512 512H0V341.3h512Z"></path>
+                                    <path fill="#D43516" fill-rule="evenodd" d="M512 170.8H0V.1h512Z"></path>
+                                 </svg>
+                                 Magyar
+
+                              </div>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
                </ul>
             </div>
-            </div>
-         </nav>
-         <p class="text-center text-8xl text-slate-100">BLUESTELLAS</p>
          </div>
-      </div>      
-   </main>
-   
-   
+      </nav>
+   </header>
+
+
+
+   <div id='services' class="z-10 flex flex-col items-center justify-center w-full h-full" style="opacity: 1; transform: none;">
+      <h1
+         class="mt-12 lg:!mt-20 mx-6 w-[300px] md:!w-full font-extrabold text-5xl lg:text-6xl  leading-tight xl:leading-snug text-center pb-4 bg-clip-text text-transparent bg-gradient-to-b from-black/80 to-black dark:from-white dark:to-[#AAAAAA]">
+         Make Ship Happen</h1>
+      <p
+         class="mx-6 text-xl max-h-[112px] md:max-h-[96px] w-[315px] md:w-[660px] md:text-2xl font-space-grotesk text-center text-[#666666] dark:text-[#888888]">
+         Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.</p>
+   </div>
+
+   <div id='about' class="z-10 flex flex-col items-center justify-center w-full h-full" style="opacity: 1; transform: none;">
+      <h1
+         class="mt-12 lg:!mt-20 mx-6 w-[300px] md:!w-full font-extrabold text-5xl lg:text-6xl  leading-tight xl:leading-snug text-center pb-4 bg-clip-text text-transparent bg-gradient-to-b from-black/80 to-black dark:from-white dark:to-[#AAAAAA]">
+         Make Ship Happen</h1>
+      <p
+         class="mx-6 text-xl max-h-[112px] md:max-h-[96px] w-[315px] md:w-[660px] md:text-2xl font-space-grotesk text-center text-[#666666] dark:text-[#888888]">
+         Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.</p>
+   </div>
+
+   <div id="news" class="z-10 flex flex-col items-center justify-center w-full h-full" style="opacity: 1; transform: none;">
+      <h1
+         class="mt-12 lg:!mt-20 mx-6 w-[300px] md:!w-full font-extrabold text-5xl lg:text-6xl  leading-tight xl:leading-snug text-center pb-4 bg-clip-text text-transparent bg-gradient-to-b from-black/80 to-black dark:from-white dark:to-[#AAAAAA]">
+         Make Ship Happen</h1>
+      <p
+         class="mx-6 text-xl max-h-[112px] md:max-h-[96px] w-[315px] md:w-[660px] md:text-2xl font-space-grotesk text-center text-[#666666] dark:text-[#888888]">
+         Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.</p>
+   </div>
+
+   <div class="z-10 flex flex-col items-center justify-center w-full h-full" style="opacity: 1; transform: none;">
+      <h1
+         class="mt-12 lg:!mt-20 mx-6 w-[300px] md:!w-full font-extrabold text-5xl lg:text-6xl  leading-tight xl:leading-snug text-center pb-4 bg-clip-text text-transparent bg-gradient-to-b from-black/80 to-black dark:from-white dark:to-[#AAAAAA]">
+         Make Ship Happen</h1>
+      <p
+         class="mx-6 text-xl max-h-[112px] md:max-h-[96px] w-[315px] md:w-[660px] md:text-2xl font-space-grotesk text-center text-[#666666] dark:text-[#888888]">
+         Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.</p>
+   </div>
+
+   <div class="z-10 flex flex-col items-center justify-center w-full h-full" style="opacity: 1; transform: none;">
+      <h1
+         class="mt-12 lg:!mt-20 mx-6 w-[300px] md:!w-full font-extrabold text-5xl lg:text-6xl  leading-tight xl:leading-snug text-center pb-4 bg-clip-text text-transparent bg-gradient-to-b from-black/80 to-black dark:from-white dark:to-[#AAAAAA]">
+         Make Ship Happen</h1>
+      <p
+         class="mx-6 text-xl max-h-[112px] md:max-h-[96px] w-[315px] md:w-[660px] md:text-2xl font-space-grotesk text-center text-[#666666] dark:text-[#888888]">
+         Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.</p>
+   </div>
+   <div class="z-10 flex flex-col items-center justify-center w-full h-full" style="opacity: 1; transform: none;">
+      <h1
+         class="mt-12 lg:!mt-20 mx-6 w-[300px] md:!w-full font-extrabold text-5xl lg:text-6xl  leading-tight xl:leading-snug text-center pb-4 bg-clip-text text-transparent bg-gradient-to-b from-black/80 to-black dark:from-white dark:to-[#AAAAAA]">
+         Make Ship Happen</h1>
+      <p
+         class="mx-6 text-xl max-h-[112px] md:max-h-[96px] w-[315px] md:w-[660px] md:text-2xl font-space-grotesk text-center text-[#666666] dark:text-[#888888]">
+         Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.</p>
+   </div>
+
+   <div class="z-10 flex flex-col items-center justify-center w-full h-full" style="opacity: 1; transform: none;">
+      <h1
+         class="mt-12 lg:!mt-20 mx-6 w-[300px] md:!w-full font-extrabold text-5xl lg:text-6xl  leading-tight xl:leading-snug text-center pb-4 bg-clip-text text-transparent bg-gradient-to-b from-black/80 to-black dark:from-white dark:to-[#AAAAAA]">
+         Make Ship Happen</h1>
+      <p
+         class="mx-6 text-xl max-h-[112px] md:max-h-[96px] w-[315px] md:w-[660px] md:text-2xl font-space-grotesk text-center text-[#666666] dark:text-[#888888]">
+         Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.</p>
+   </div>
+
+   <div class="z-10 flex flex-col items-center justify-center w-full h-full" style="opacity: 1; transform: none;">
+      <h1
+         class="mt-12 lg:!mt-20 mx-6 w-[300px] md:!w-full font-extrabold text-5xl lg:text-6xl  leading-tight xl:leading-snug text-center pb-4 bg-clip-text text-transparent bg-gradient-to-b from-black/80 to-black dark:from-white dark:to-[#AAAAAA]">
+         Make Ship Happen</h1>
+      <p
+         class="mx-6 text-xl max-h-[112px] md:max-h-[96px] w-[315px] md:w-[660px] md:text-2xl font-space-grotesk text-center text-[#666666] dark:text-[#888888]">
+         Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.</p>
+   </div>
+
+
+
    <!-- PAGE SCRIPT -->
    <script src="js/script.js"></script>
+   <script src="js/stars.js"></script>
    <!-- TAILWIND JS -->
    <script src="https://cdn.tailwindcss.com"></script>
    <!-- FONT AWESOME -->
@@ -78,7 +232,8 @@
    <!-- FLOWBITE -->
    <script src="
    https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.js"
-   integrity="sha512-bUju8VkXhCQgW7zCHSdiIDpECo/lqzChkKrKoc1v2PL2XqO/0Q2Y8dhu07+q6Rk+1c1xr6cfE0VZnumgwy93Ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      integrity="sha512-bUju8VkXhCQgW7zCHSdiIDpECo/lqzChkKrKoc1v2PL2XqO/0Q2Y8dhu07+q6Rk+1c1xr6cfE0VZnumgwy93Ig=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
