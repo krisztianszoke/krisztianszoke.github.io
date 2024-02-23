@@ -1,7 +1,7 @@
 var c = document.createElement('canvas');
 c.id = "canvasBackground";
 
-var parent = document.getElementById('hero');
+var parent = document.getElementById('stars');
 parent.appendChild(c);
 
 var ctx = document.getElementById('canvasBackground').getContext('2d');

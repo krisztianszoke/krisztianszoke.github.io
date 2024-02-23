@@ -12,7 +12,7 @@ html{
    scroll-behavior: smooth;
 }
 
-#hero {
+#stars {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -24,7 +24,7 @@ html{
 }
 
 #canvasBackground {
-   position: fixed;
+   position:absolute;
    top: 0;
    left: 0;
 }

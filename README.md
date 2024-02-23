@@ -3,6 +3,11 @@
 - [x] Template creation
 - [x] Configuration
 - [x] Layout planning
-  - [ ] Menubar
-  - [ ] Language selector
-  - [ ] Section planning
+  - [x] Menubar
+  - [x] Language selector planning
+  - [x] Section planning
+- [] Animations through sections
+- [] Language selector
+  - [] Prepare JSONs
+  - [x] Javascript to change language
+  - [] Replace in the HTML Code
