@@ -28,3 +28,27 @@ html{
    top: 0;
    left: 0;
 }
+
+::-webkit-scrollbar {
+   width: 10px;
+ }
+ 
+ ::-webkit-scrollbar-track {
+   background-color: transparent;
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+   background-color: #c9c9c9;
+   
+ }
+ 
+ ::-webkit-scrollbar-thumb:hover {
+   background-color: #b3b3b3;
+ }
+ ::-webkit-scrollbar-thumb {
+   background-color: #888;
+   border-radius: 6px; 
+   border: 3px solid #ffffff;
+   height: 10;
+ }
+ 
