@@ -4,6 +4,11 @@
    box-sizing: border-box;
 }
 
+body {
+   overflow-x: hidden;
+   background-color: black;
+}
+
 #hero {
    display: flex;
    align-items: center;
@@ -12,7 +17,7 @@
    width: 100vw;
    background: linear-gradient(210deg, rgb(20, 19, 38) 0%, rgb(18, 33, 171) 100%);
    font-family: "Orbitron", sans-serif;
-   z-index: 2;
+   z-index: 1;
 }
 
 #canvasBackground {
