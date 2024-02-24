@@ -6,8 +6,8 @@
   - [x] Menubar
   - [x] Language selector planning
   - [x] Section planning
-- [] Animations through sections
-- [] Language selector
-  - [] Prepare JSONs
+- [ ] Animations through sections
+- [ ] Language selector
+  - [ ] Prepare JSONs
   - [x] Javascript to change language
-  - [] Replace in the HTML Code
+  - [ ] Replace in the HTML Code
