@@ -6,7 +6,7 @@
   - [x] Menubar
   - [x] Language selector planning
   - [x] Section planning
-- [ ] Animations through sections
+- [x] Animations through sections
 - [ ] Language selector
   - [ ] Prepare JSONs
   - [x] Javascript to change language
