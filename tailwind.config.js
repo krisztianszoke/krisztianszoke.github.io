@@ -5,9 +5,9 @@ module.exports = {
    ],
    theme: {
        extend: {
-           width: {
-               128: "80rem",
-           },
+        width: {
+          '128': '80rem',
+        }
        },
    },
    plugins: [require('flowbite/plugin')],
