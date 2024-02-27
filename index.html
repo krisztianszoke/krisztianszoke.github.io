@@ -29,13 +29,16 @@
 
 <body class="mx-auto">
 
-   <div id="stars">
-      <p class="text-center text-8xl text-slate-100">BLUESTELLAS</p>
-      <a href="#about" class="z-50">
-         <div class="scroll-down">
-         </div>
-      </a>
-   </div>
+   <section id="home">
+      <div id="stars">
+         <p class="text-center text-8xl text-slate-100">BLUESTELLAS</p>
+         <a href="#about" class="z-50">
+            <div class="scroll-down">
+            </div>
+         </a>
+      </div>
+   </section>
+
 
    <header class="bg-white fixed top-0 w-full shadow-md z-50">
       <nav class="bg-white border-gray-200">
@@ -63,16 +66,14 @@
                            transform="scale(3.9385)" />
                      </g>
                   </svg>
-                  English (US)
+                  <div id="current-lang">English (US)</div>
                </button>
                <!-- Dropdown -->
-               <div
-                  class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow"
+               <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow"
                   id="language-dropdown-menu">
                   <ul class="py-2 font-medium" role="none">
                      <li>
-                        <a id="lang-en" href="#"
-                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        <a id="lang-en" href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                            role="menuitem">
                            <div class="inline-flex items-center">
                               <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2"
@@ -92,13 +93,12 @@
                                        transform="scale(3.9385)" />
                                  </g>
                               </svg>
-                              English (US)
+                              English
                            </div>
                         </a>
                      </li>
                      <li>
-                        <a id="lang-de" href="#"
-                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        <a id="lang-de" href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                            role="menuitem">
                            <div class="inline-flex items-center">
                               <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
@@ -112,8 +112,7 @@
                         </a>
                      </li>
                      <li>
-                        <a id="lang-hu" href="#"
-                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        <a id="lang-hu" href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                            role="menuitem">
                            <div class="inline-flex items-center">
                               <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
@@ -127,8 +126,7 @@
                         </a>
                      </li>
                      <li>
-                        <a id="lang-fr" href="#"
-                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        <a id="lang-fr" href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                            role="menuitem">
                            <div class="inline-flex items-center">
                               <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
@@ -159,27 +157,27 @@
                </button>
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
-               <ul
-                  class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white" id="menu_links">
+               <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
+                  id="menu_links">
                   <li>
-                     <a href="#"
+                     <a id="home-button" href="#home"
                         class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                         aria-current="page">Home</a>
                   </li>
                   <li>
-                     <a href="#about"
+                     <a id="about-button" href="#about"
                         class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">About</a>
                   </li>
                   <li>
-                     <a href="#services"
+                     <a id="services-button" href="#services"
                         class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Services</a>
                   </li>
                   <li>
-                     <a href="#contact"
+                     <a id="contact-button" href="#contact"
                         class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
                   </li>
                   <li>
-                     <a href="#news"
+                     <a id="news-button" href="#news"
                         class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">News</a>
                   </li>
                </ul>
@@ -194,27 +192,24 @@
       <div class="grid grid-cols-2 mt-10">
          <img class="w-full rounded-xl shadow-xl border border-gray-100" src="./assets/testimg/testabout1.jpg" alt="">
          <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col justify-center items-center gap-10 px-8">
-            <h2 class="text-4xl font-extrabold tracking-tight">Automotive software
-               developing</h2>
-            <p class="text-gray-700 text-lg">Here at BlueStellas, our experts possess a high level
-               of expertise in the automotive industry and stay up-to-date with the latest developments in electronic
-               vehicle systems. We are committed to developing forward-thinking and efficient software that contributes
-               to enhancing vehicle performance, safety, and driving experiences.</p>
+            <h2 id="about-title" class="text-4xl font-extrabold tracking-tight">
+            </h2>
+            <p id="about-text" class="text-gray-700 text-lg"></p>
          </div>
       </div>
       <!-- OUR TEAM -->
       <div class="main-container my-20">
          <div data-aos="flip-up" data-aos-duration="1000">
-            <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-center">Our team</h1>
-            <p class="font-light text-gray-500 text-center">Dummydata</p>
+            <h1 id="team-title" class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-center"></h1>
+            <p id="team-text" class="font-light text-gray-500 text-center"></p>
          </div>
-       
+
          <div class="grid grid-cols-2 mt-10">
             <div data-aos="flip-left" data-aos-duration="1000" class="flex flex-col justify-center items-center">
                <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                   src="https://www.pngitem.com/pimgs/m/22-224000_profile-pic-dummy-png-transparent-png.png" alt="">
-               <p class="text-2xl font-bold tracking-tight text-gray-900">DummyData</p>
-               <p class="mt-2 text-gray-400">CEO</p>
+               <p id="team-member-1-name" class="text-2xl font-bold tracking-tight text-gray-900"></p>
+               <p id="team-member-1-role" class="mt-2 text-gray-400"></p>
                <div class="flex justify-center gap-5 mt-3">
                   <a href=""><i
                         class="fa-solid fa-envelope text-2xl text-gray-700 hover:text-gray-900 ease-in duration-200"></i></a>
@@ -227,8 +222,8 @@
             <div data-aos="flip-right" data-aos-duration="1000" class="flex flex-col justify-center items-center">
                <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                   src="https://www.pngitem.com/pimgs/m/22-224000_profile-pic-dummy-png-transparent-png.png" alt="">
-               <p class="text-2xl font-bold tracking-tight text-gray-900">DummyData</p>
-               <p class="mt-2 text-gray-400">CEO</p>
+               <p id="team-member-2-name" class="text-2xl font-bold tracking-tight text-gray-900"></p>
+               <p id="team-member-2-role" class="mt-2 text-gray-400"></p>
                <div class="flex justify-center gap-5 mt-3">
                   <a href=""><i
                         class="fa-solid fa-envelope text-2xl text-gray-700 hover:text-gray-900 ease-in duration-200"></i></a>
@@ -254,36 +249,35 @@
    <!-- SERVICES -->
 
    <section id="services" class="bg-gray-200 py-10 scroll-m-20">
-      <h2 data-aos="fade-up" data-aos-duration="1000"  class="text-4xl font-extrabold tracking-tight text-center">Our Services</h2>
-      <p data-aos="fade-up" data-aos-duration="1000"  class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Saepe error voluptate
-         nulla excepturi molestias nesciunt nisi. Asperiores dolorum ipsam sunt?</p>
-      <div data-aos="fade-up" data-aos-duration="1000"  class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+      <h2 id="services-title" data-aos="fade-up" data-aos-duration="1000"
+         class="text-4xl font-extrabold tracking-tight text-center"></h2>
+      <p id="services-text" data-aos="fade-up" data-aos-duration="1000" class="text-center mt-3">
+      <div data-aos="fade-up" data-aos-duration="1000"
+         class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
          <div class="grid grid-cols-2 gap-10 text-center">
             <div class="flex flex-col gap-1">
                <i class="fa-regular fa-lightbulb text-4xl text-gray-800"></i>
-               <p class="font-bold text-lg">Lorem ipsum</p>
-               <p>Lorem ipsum dolor sit amet.</p>
+               <p id="services-block1-title" class="font-bold text-lg">
+               <p id="services-block1-text">
             </div>
             <div class="flex flex-col gap-1">
                <i class="fa-solid fa-medal text-4xl text-gray-800"></i>
-               <p class=" font-bold text-lg">Lorem ipsum</p>
-                  <p>Lorem ipsum dolor sit amet.</p>
+               <p id="services-block2-title" class=" font-bold text-lg">
+               <p id="services-block2-text">
             </div>
             <div class="flex flex-col gap-1 mt-5">
                <i class="fa-solid fa-laptop-code text-4xl text-gray-800"></i>
-               <p class=" font-bold text-lg">Lorem ipsum</p>
-                  <p>Lorem ipsum dolor sit amet.</p>
+               <p id="services-block3-title" class=" font-bold text-lg">
+               <p id="services-block3-text">
             </div>
             <div class="flex flex-col gap-1 mt-5">
                <i class="fa-solid fa-people-group text-4xl text-gray-800"></i>
-               <p class=" font-bold text-lg">Lorem ipsum</p>
-                  <p>Lorem ipsum dolor sit amet.</p>
+               <p id="services-block4-title" class=" font-bold text-lg">
+               <p id="services-block4-text">
             </div>
          </div>
          <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg"
-               src="./assets/testimg/test4.webp"
-               alt="office content 1">
+            <img class="w-full rounded-lg" src="./assets/testimg/test4.webp" alt="office content 1">
             <img class="mt-4 w-full lg:mt-10 rounded-lg"
                src="https://media.istockphoto.com/id/1424912318/hu/fot%C3%B3/elfoglalt-millenniumi-szakmai-csoport-amely-%C3%A1ttekinti-a-startup-marketing-jelent%C3%A9seket.jpg?s=1024x1024&w=is&k=20&c=PE0lWKFPArkF2Fm7jh6tmrcR_G0OFifKUc3U5c7LIBM="
                alt="office content 2">
@@ -310,27 +304,27 @@
                referrerpolicy="no-referrer-when-downgrade"></iframe>
          </div>
          <div class="flex flex-col px-10">
-            <h1 class="text-3xl font-bold text-sky-700 mb-3">Contact Us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, deleniti.</p>
+            <h1 id="contact-title" class="text-3xl font-bold text-sky-700 mb-3"></h1>
+            <p id="contact-text">
             <div class="border-b border-slate-200 mt-5"></div>
             <div class="flex items-center mt-12 gap-3 grid grid-cols-3">
                <div
                   class="flex flex-col items-center justify-center p-3 rounded-lg hover:bg-slate-200 ease-in duration-200 cursor-pointer">
                   <i class="fa-solid fa-location-dot text-4xl text-sky-700"></i>
-                  <p class="mt-3 font-bold">Location</p>
-                  <p>Szombathely Sárdi ér 00.</p>
+                  <p id="contact-location-title" class="mt-3 font-bold"></p>
+                  <p id="contact-location-text"></p>
                </div>
                <div
                   class="flex flex-col items-center justify-center p-3 rounded-lg hover:bg-slate-200 ease-in duration-200 cursor-pointer">
                   <i class="fa-solid fa-envelope text-4xl text-sky-700"></i>
-                  <p class="mt-3 font-bold">Email</p>
-                  <p>asd123asd123@gmail.com</p>
+                  <p id="contact-email-title" class="mt-3 font-bold">Email</p>
+                  <p id="contact-email-text">asd123asd123@gmail.com</p>
                </div>
                <div
                   class="flex flex-col items-center justify-center p-3 rounded-lg hover:bg-slate-200 ease-in duration-200 cursor-pointer">
                   <i class="fa-solid fa-mobile text-4xl text-sky-700"></i>
-                  <p class="mt-3 font-bold">Phone</p>
-                  <p>+36 00 000 0000</p>
+                  <p id="contact-phone-title" class="mt-3 font-bold">Phone</p>
+                  <p id="contact-phone-text">+36 00 000 0000</p>
                </div>
             </div>
          </div>
@@ -339,21 +333,39 @@
 
    <!-- NEWS -->
 
-   <section id="news" class="bg-gray-200">
-      <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-         <div class="mr-auto place-self-center lg:col-span-7">
-            <h1
-               class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
-               Dummydata</h1>
-            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
-               Dummydata</p>
-         </div>
-         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="./assets/testimg/test3.png" alt="mockup">
+   <section id="news" class="py-10 m-10 scroll-m-10">
+      <div class="flex flex-col justify-center items-center gap-2 news-container">
+         <h1 class="text-4xl font-extrabold tracking-tight">News</h1>
+         <h2 class="text-sky-700 font-extrabold mb-8 ">Our latest News</h2>
+         <iframe class="rounded-xl shadow-xl w-full h-96" src="https://www.youtube.com/embed/MNeX4EGtR5Y"
+            title="C++ in 100 Seconds" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+         <div class="grid grid-cols-2 gap-8 mt-5 justify-items-center">
+            <div class="flex flex-col justify-start">
+               <img class="rounded-xl border border-gray-300 mx-auto w-full" src="./assets/testimg/testabout2.jpg"
+                  alt="">
+               <div class="pl-3 mt-1 flex flex-col justify-start items-start">
+                  <p class="text-gray-500">2023.01.01</p>
+                  <h1 class="font-bold tracking-tight text-xl mt-3">Title</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laudantium?</p>
+               </div>
+            </div>
+            <div class="flex flex-col justify-start">
+               <img class="rounded-xl border border-gray-300 mx-auto w-full" src="./assets/testimg/testabout2.jpg"
+                  alt="">
+               <div class="pl-3 mt-1 flex flex-col justify-start items-start">
+                  <p class="text-gray-500">2023.01.01</p>
+                  <h1 class="font-bold tracking-tight text-xl mt-3">Title</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laudantium?</p>
+               </div>
+            </div>
          </div>
       </div>
    </section>
 
+   <!-- <img data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="100" data-aos-easing="ease-in-cubic"
+               src="./assets/testimg/test3.png" alt="mockup"> -->
 
    <footer class="p-4 md:p-8 lg:p-10 bg-gray-800">
       <div class="mx-auto max-w-screen-xl text-center">
@@ -381,7 +393,7 @@
    <!-- PAGE SCRIPT -->
    <script src="js/script.js"></script>
    <script src="js/stars.js"></script>
-   <script src="js/setActiveLink.js"></script>
+   <script type="module" src="js/languageselection.js"></script>
    <!-- TAILWIND JS -->
    <script src="https://cdn.tailwindcss.com"></script>
    <!-- FONT AWESOME -->
@@ -403,7 +415,10 @@
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script>
       AOS.init();
-    </script>
+   </script>
+
+
+   <script src="js/script.js"></script>
 </body>
 
 </html>

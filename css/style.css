@@ -199,3 +199,8 @@ html{
    50% {transform: translateX(-25%);}
    100% {transform: translateX(0);}
 }
+
+.news-container {
+   max-width: 900px;
+   margin: auto;
+}

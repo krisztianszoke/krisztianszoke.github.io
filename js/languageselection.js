@@ -10,8 +10,8 @@ import langSelector from './langs.json' assert {type: 'json'};
 		}
 
         function setLangDE() {
-			document.cookie= "language=hu";
-			let currentLang = "hu";
+			document.cookie= "language=de";
+			let currentLang = "de";
 			console.log(currentLang);
 			changeText(currentLang);
 		}
@@ -19,6 +19,13 @@ import langSelector from './langs.json' assert {type: 'json'};
 		function setLangHU() {
 			document.cookie= "language=hu";
 			let currentLang = "hu";
+			console.log(currentLang);
+			changeText(currentLang);
+		}
+
+      function setLangFR() {
+			document.cookie= "language=fr";
+			let currentLang = "fr";
 			console.log(currentLang);
 			changeText(currentLang);
 		}
@@ -42,16 +49,48 @@ import langSelector from './langs.json' assert {type: 'json'};
 		
 		document.getElementById("lang-hu").addEventListener("click",setLangHU);
 		document.getElementById("lang-en").addEventListener("click",setLangEN);
-        document.getElementById("lang-en").addEventListener("click",setLangDE);
+      document.getElementById("lang-de").addEventListener("click",setLangDE);
+      document.getElementById("lang-fr").addEventListener("click",setLangFR);
 		changeText(currentLang);
     	});
 
 		function changeText(currentLang){
-			document.getElementById("mushroomlist_button").innerHTML=langSelector[currentLang].MushroomList;
-			document.getElementById("home_button").innerHTML=langSelector[currentLang].Home;
-			document.getElementById("uploadText").innerHTML=langSelector[currentLang].Upload;
-			document.getElementById("predict-button").innerHTML=langSelector[currentLang].Prediction;
-			document.getElementById("lang_button").innerHTML=langSelector[currentLang].Language;
-			document.getElementById("document_button").innerHTML=langSelector[currentLang].Documentation;
-
+         // MENUBAR
+			document.getElementById("home-button").innerHTML=langSelector[currentLang].Home;
+         document.getElementById("about-button").innerHTML=langSelector[currentLang].About;
+         document.getElementById("services-button").innerHTML=langSelector[currentLang].Services;
+         document.getElementById("contact-button").innerHTML=langSelector[currentLang].Contact;
+         document.getElementById("news-button").innerHTML=langSelector[currentLang].News;
+         document.getElementById("flag-icon-css-us").innerHTML=langSelector[currentLang].Flag;
+         document.getElementById("current-lang").innerHTML=langSelector[currentLang].Language;
+         // ABOUT US 
+         document.getElementById("about-title").innerHTML=langSelector[currentLang].Section_about_title;
+         document.getElementById("about-text").innerHTML=langSelector[currentLang].Section_about_text;
+         //OUR TEAM
+         document.getElementById("team-title").innerHTML=langSelector[currentLang].Section_team_title;
+         document.getElementById("team-text").innerHTML=langSelector[currentLang].Section_team_text;
+         document.getElementById("team-member-1-name").innerHTML=langSelector[currentLang].Section_team_member1_name;
+         document.getElementById("team-member-1-role").innerHTML=langSelector[currentLang].Section_team_member1_role;
+         document.getElementById("team-member-2-name").innerHTML=langSelector[currentLang].Section_team_member2_name;
+         document.getElementById("team-member-2-role").innerHTML=langSelector[currentLang].Section_team_member2_role;
+         //SERVICES
+         document.getElementById("services-title").innerHTML=langSelector[currentLang].Section_services_title;
+         document.getElementById("services-text").innerHTML=langSelector[currentLang].Section_services_text;
+         document.getElementById("services-block1-title").innerHTML=langSelector[currentLang].Section_services_block_1_title;
+         document.getElementById("services-block1-text").innerHTML=langSelector[currentLang].Section_services_block_1_text;
+         document.getElementById("services-block2-title").innerHTML=langSelector[currentLang].Section_services_block_2_title;
+         document.getElementById("services-block2-text").innerHTML=langSelector[currentLang].Section_services_block_2_text;
+         document.getElementById("services-block3-title").innerHTML=langSelector[currentLang].Section_services_block_3_title;
+         document.getElementById("services-block3-text").innerHTML=langSelector[currentLang].Section_services_block_3_text;
+         document.getElementById("services-block4-title").innerHTML=langSelector[currentLang].Section_services_block_4_title;
+         document.getElementById("services-block4-text").innerHTML=langSelector[currentLang].Section_services_block_4_text;
+         //CONTACT
+         document.getElementById("contact-title").innerHTML=langSelector[currentLang].Section_contact_title;
+         document.getElementById("contact-text").innerHTML=langSelector[currentLang].Section_contact_text;
+         document.getElementById("contact-location-title").innerHTML=langSelector[currentLang].Section_contact_address_title;
+         document.getElementById("contact-location-text").innerHTML=langSelector[currentLang].Section_contact_address_text;
+         document.getElementById("contact-email-title").innerHTML=langSelector[currentLang].Section_contact_email_title;
+         document.getElementById("contact-email-text").innerHTML=langSelector[currentLang].Section_contact_email_text;
+         document.getElementById("contact-phone-title").innerHTML=langSelector[currentLang].Section_contact_phone_title;
+         document.getElementById("contact-phone-text").innerHTML=langSelector[currentLang].Section_contact_phone_text;
 		}
