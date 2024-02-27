@@ -34,14 +34,14 @@
    </div>
 
    <header class="bg-white fixed top-0 w-full shadow-md z-50">
-      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <nav class="bg-white border-gray-200">
          <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
                <img src="assets/images/logo.png" class="h-8" alt="Logo" />
             </a>
             <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
                <button type="button" data-dropdown-toggle="language-dropdown-menu"
-                  class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                  class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100">
                   <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg"
                      id="flag-icon-css-us" viewBox="0 0 512 512">
                      <g fill-rule="evenodd">
@@ -63,12 +63,12 @@
                </button>
                <!-- Dropdown -->
                <div
-                  class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
+                  class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow"
                   id="language-dropdown-menu">
                   <ul class="py-2 font-medium" role="none">
                      <li>
                         <a id="lang-en" href="#"
-                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                            role="menuitem">
                            <div class="inline-flex items-center">
                               <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2"
@@ -94,7 +94,7 @@
                      </li>
                      <li>
                         <a id="lang-de" href="#"
-                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                            role="menuitem">
                            <div class="inline-flex items-center">
                               <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
@@ -109,7 +109,7 @@
                      </li>
                      <li>
                         <a id="lang-hu" href="#"
-                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                            role="menuitem">
                            <div class="inline-flex items-center">
                               <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
@@ -124,7 +124,7 @@
                      </li>
                      <li>
                         <a id="lang-fr" href="#"
-                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                            role="menuitem">
                            <div class="inline-flex items-center">
                               <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
@@ -144,7 +144,7 @@
                   </ul>
                </div>
                <button data-collapse-toggle="navbar-language" type="button"
-                  class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                  class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                   aria-controls="navbar-language" aria-expanded="false">
                   <span class="sr-only">Open main menu</span>
                   <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -156,29 +156,29 @@
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
                <ul
-                  class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
                   <li>
                      <a href="#"
-                        class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white "
+                        class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
                         aria-current="page">Home</a>
                   </li>
                   <li>
                      <a href="#about"
-                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white">About</a>
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">About</a>
                   </li>
                   <li>
                      <a href="#services"
-                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white">Services</a>
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Services</a>
                   </li>
 
 
                   <li>
                      <a href="#contact"
-                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white">Contact</a>
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
                   </li>
                   <li>
                      <a href="#news"
-                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white">News</a>
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">News</a>
                   </li>
                </ul>
             </div>
@@ -188,7 +188,7 @@
 
    <!-- ABOUT -->
 
-   <section id="about" class="bg-white dark:bg-gray-900 main-container mt-20 scroll-m-20">
+   <section id="about" class="bg-white main-container mt-20 scroll-m-20">
       <div class="grid grid-cols-2 mt-10">
          <img class="w-full rounded-xl shadow-xl border border-gray-100" src="./assets/testimg/testabout1.jpg" alt="">
          <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col justify-center items-center gap-10 px-8">
@@ -341,9 +341,9 @@
       <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
          <div class="mr-auto place-self-center lg:col-span-7">
             <h1
-               class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+               class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
                Dummydata</h1>
-            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
                Dummydata</p>
          </div>
          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
@@ -355,11 +355,11 @@
 
    <footer class="p-4 md:p-8 lg:p-10 bg-gray-800">
       <div class="mx-auto max-w-screen-xl text-center">
-         <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
+         <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900">
             <img src="assets/images/logo.png" class="h-8" alt="Logo" />
          </a>
-         <p class="my-6 text-gray-100 dark:text-gray-400">We place some text here.</p>
-         <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-100 dark:text-white">
+         <p class="my-6 text-gray-100">We place some text here.</p>
+         <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-100">
             <li>
                <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
             </li>
@@ -370,7 +370,7 @@
                <a href="#" class="mr-4 hover:underline md:mr-6">Contact</a>
             </li>
          </ul>
-         <span class="text-sm text-gray-100 sm:text-center dark:text-gray-400">&copy; 2024 <a href="#"
+         <span class="text-sm text-gray-100 sm:text-center">&copy; 2024 <a href="#"
                class="hover:underline">BlueStellas</a>. All Rights Reserved.</span>
       </div>
    </footer>
