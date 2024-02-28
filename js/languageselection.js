@@ -44,7 +44,8 @@ function getCookie(cname) {
 	}
 	return "";
 }
-$(document).ready(function () {
+
+window.addEventListener('DOMContentLoaded', (event) => {
 	currentLang = getCookie("language");
 
 	document.getElementById("lang-hu").addEventListener("click", setLangHU);
@@ -57,6 +58,7 @@ $(document).ready(function () {
 	document.getElementById("lang-de").addEventListener("touchstart", setLangDE);
 	document.getElementById("lang-fr").addEventListener("touchstart", setLangFR);
 	changeText(currentLang);
+
 });
 
 function changeText(currentLang) {
