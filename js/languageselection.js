@@ -44,24 +44,15 @@ function getCookie(cname) {
 	}
 	return "";
 }
-
-
-function initLang(){
+$(document).ready(function () {
 	currentLang = getCookie("language");
 
-	document.getElementById("lang-hu").addEventListener("click", setLangHU);
-	document.getElementById("lang-en").addEventListener("click", setLangEN);
-	document.getElementById("lang-de").addEventListener("click", setLangDE);
-	document.getElementById("lang-fr").addEventListener("click", setLangFR);
-
-   document.getElementById("lang-hu").addEventListener("touchstart", setLangHU);
-	document.getElementById("lang-en").addEventListener("touchstart", setLangEN);
-	document.getElementById("lang-de").addEventListener("touchstart", setLangDE);
-	document.getElementById("lang-fr").addEventListener("touchstart", setLangFR);
+   $("#lang-hu").click(setLangHU);
+   $("#lang-en").click(setLangEN);
+   $("#lang-fr").click(setLangFR);
+   $("#lang-de").click(setLangDE);
 	changeText(currentLang);
-}
-
-window.addEventListener('DOMContentLoaded', initLang);
+});
 
 function changeText(currentLang) {
     // MENUBAR
