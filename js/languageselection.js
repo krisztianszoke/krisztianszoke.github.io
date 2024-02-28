@@ -52,11 +52,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	document.getElementById("lang-en").addEventListener("click", setLangEN);
 	document.getElementById("lang-de").addEventListener("click", setLangDE);
 	document.getElementById("lang-fr").addEventListener("click", setLangFR);
-
-   document.getElementById("lang-hu").addEventListener("touchstart", setLangHU);
-	document.getElementById("lang-en").addEventListener("touchstart", setLangEN);
-	document.getElementById("lang-de").addEventListener("touchstart", setLangDE);
-	document.getElementById("lang-fr").addEventListener("touchstart", setLangFR);
 	changeText(currentLang);
 
 });
