@@ -1,6 +1,8 @@
 import langSelector from './langs.json' assert {type: 'json'};
 
 var currentLang = "en";
+var isiPhone = /iPhone/i.test(navigator.userAgent);
+
 
 function setLangEN() {
 	document.cookie = "language=en";
@@ -46,7 +48,7 @@ function getCookie(cname) {
 }
 $(document).ready(function () {
 	currentLang = getCookie("language");
-
+   changeText("en");
    $("#lang-hu").click(setLangHU);
    $("#lang-en").click(setLangEN);
    $("#lang-fr").click(setLangFR);
