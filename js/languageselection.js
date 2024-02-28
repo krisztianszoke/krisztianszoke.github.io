@@ -45,6 +45,7 @@ function getCookie(cname) {
 	return "";
 }
 
+
 function initLang(){
 	currentLang = getCookie("language");
 
@@ -60,7 +61,10 @@ function initLang(){
 	changeText(currentLang);
 }
 
-window.addEventListener('DOMContentLoaded', initLang);
+// window.addEventListener('DOMContentLoaded', initLang);
+
+const button = document.querySelector("button");
+button.addEventListener("click", initLang);
 
 function changeText(currentLang) {
     // MENUBAR
