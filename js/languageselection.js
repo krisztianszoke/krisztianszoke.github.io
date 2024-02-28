@@ -61,10 +61,7 @@ function initLang(){
 	changeText(currentLang);
 }
 
-// window.addEventListener('DOMContentLoaded', initLang);
-
-const button = document.querySelector("button");
-button.addEventListener("click", initLang);
+window.addEventListener('DOMContentLoaded', initLang);
 
 function changeText(currentLang) {
     // MENUBAR
