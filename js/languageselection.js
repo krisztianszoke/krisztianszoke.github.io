@@ -45,7 +45,7 @@ function getCookie(cname) {
 	return "";
 }
 
-window.addEventListener('DOMContentLoaded', (event) => {
+function initLang(){
 	currentLang = getCookie("language");
 
 	document.getElementById("lang-hu").addEventListener("click", setLangHU);
@@ -53,8 +53,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	document.getElementById("lang-de").addEventListener("click", setLangDE);
 	document.getElementById("lang-fr").addEventListener("click", setLangFR);
 	changeText(currentLang);
+}
 
-});
+window.addEventListener('DOMContentLoaded', initLang);
 
 function changeText(currentLang) {
     // MENUBAR
