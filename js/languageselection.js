@@ -45,23 +45,19 @@ function getCookie(cname) {
 	return "";
 }
 $(document).ready(function () {
-   currentLang = getCookie("language");
+	currentLang = getCookie("language");
 
-   document.getElementById("lang-hu").addEventListener("click", setLangHU);
-   document.getElementById("lang-hu").addEventListener("touchend", setLangHU);
+	document.getElementById("lang-hu").addEventListener("click", setLangHU);
+	document.getElementById("lang-en").addEventListener("click", setLangEN);
+	document.getElementById("lang-de").addEventListener("click", setLangDE);
+	document.getElementById("lang-fr").addEventListener("click", setLangFR);
 
-   document.getElementById("lang-en").addEventListener("click", setLangEN);
-   document.getElementById("lang-en").addEventListener("touchend", setLangEN);
-
-   document.getElementById("lang-de").addEventListener("click", setLangDE);
-   document.getElementById("lang-de").addEventListener("touchend", setLangDE);
-
-   document.getElementById("lang-fr").addEventListener("click", setLangFR);
-   document.getElementById("lang-fr").addEventListener("touchend", setLangFR);
-
-   changeText(currentLang);
+   document.getElementById("lang-hu").addEventListener("touchstart", setLangHU);
+	document.getElementById("lang-en").addEventListener("touchstart", setLangEN);
+	document.getElementById("lang-de").addEventListener("touchstart", setLangDE);
+	document.getElementById("lang-fr").addEventListener("touchstart", setLangFR);
+	changeText(currentLang);
 });
-
 
 function changeText(currentLang) {
     // MENUBAR
