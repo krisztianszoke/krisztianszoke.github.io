@@ -1,6 +1,8 @@
 import langSelector from './langs.json' assert {type: 'json'};
 
 var currentLang = "en";
+var isiPhone = /iPhone/i.test(navigator.userAgent);
+
 
 function setLangEN() {
 	document.cookie = "language=en";
@@ -45,17 +47,19 @@ function getCookie(cname) {
 	return "";
 }
 $(document).ready(function () {
+  
 	currentLang = getCookie("language");
-
+   alert("Hello! I am an alert box!!");
+   changeText("en");
    $("#lang-hu").click(setLangHU);
    $("#lang-en").click(setLangEN);
    $("#lang-fr").click(setLangFR);
    $("#lang-de").click(setLangDE);
-	changeText(currentLang);
 });
 
 function changeText(currentLang) {
     // MENUBAR
+    alert("Hello! I dasdasdasda!");
     if (langSelector[currentLang]) {
         document.getElementById("home-button").innerHTML = langSelector[currentLang].Home;
         document.getElementById("about-button").innerHTML = langSelector[currentLang].About;
