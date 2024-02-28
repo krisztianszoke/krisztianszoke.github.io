@@ -31,7 +31,7 @@
 
    <section id="home">
       <div id="stars">
-         <p class="text-center text-8xl text-slate-100">BLUESTELLAS</p>
+         <p class="text-center text-8xl text-slate-100 max-[950px]:text-4xl max-[400px]:text-2xl">BLUESTELLAS</p>
          <a href="#about" class="z-50">
             <div class="scroll-down">
             </div>
@@ -41,10 +41,10 @@
 
 
    <header class="bg-white fixed top-0 w-full shadow-md z-50">
-      <nav class="bg-white border-gray-200">
+      <nav class="bg-white border-gray-200 main-container">
          <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-               <img src="assets/images/logo.png" class="h-8" alt="Logo" />
+               <img src="assets/images/logo.png" class="h-8 max-[370px]:h-5" alt="Logo" />
             </a>
             <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
                <button type="button" data-dropdown-toggle="language-dropdown-menu"
@@ -189,13 +189,13 @@
 
    <!-- ABOUT -->
 
-   <section id="about" class="bg-white main-container mt-20 scroll-m-20">
-      <div class="grid grid-cols-2 mt-10">
+   <section id="about" class="bg-white main-container mt-20 scroll-m-20 max-[1200px]:mx-5">
+      <div class="grid grid-cols-2 mt-10 max-[900px]:mt-5 max-[600px]:grid-cols-1">
          <img class="w-full rounded-xl shadow-xl border border-gray-100" src="./assets/testimg/testabout1.jpg" alt="">
-         <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col justify-center items-center gap-10 px-8">
-            <h2 id="about-title" class="text-4xl font-extrabold tracking-tight">Adaptive Company
+         <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col justify-center items-center gap-10 pl-8 max-[900px]:gap-5  max-[900px]:pl-4">
+            <h2 id="about-title" class="text-4xl font-extrabold tracking-tight max-[900px]:text-2xl max-[700px]:text-xl max-[600px]:mt-8">Adaptive Company
             </h2>
-            <p id="about-text" class="text-gray-700 text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores dicta fugit eum numquam ipsam aspernatur at nesciunt iste ut tempore!</p>
+            <p id="about-text" class="text-gray-700 text-lg max-[900px]:text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores dicta fugit eum numquam ipsam aspernatur at nesciunt iste ut tempore!</p>
          </div>
       </div>
       <!-- OUR TEAM -->
@@ -205,8 +205,8 @@
             <p id="team-text" class="font-light text-gray-500 text-center"></p>
          </div>
 
-         <div class="grid grid-cols-2 mt-10">
-            <div data-aos="flip-left" data-aos-duration="1000" class="flex flex-col justify-center items-center">
+         <div class="grid grid-cols-2 mt-10 max-[440px]:grid-cols-1">
+            <div data-aos="flip-left" data-aos-duration="1000" class="flex flex-col justify-center items-center max-[440px]:mb-8">
                <img class="mx-auto mb-4 w-36 h-36 rounded-full"
                   src="https://www.pngitem.com/pimgs/m/22-224000_profile-pic-dummy-png-transparent-png.png" alt="">
                <p id="team-member-1-name" class="text-2xl font-bold tracking-tight text-gray-900">Name Name</p>
@@ -251,11 +251,11 @@
 
    <section id="services" class="bg-gray-200 py-10 scroll-m-20">
       <h2 id="services-title" data-aos="fade-up" data-aos-duration="1000"
-         class="text-4xl font-extrabold tracking-tight text-center"></h2>
-      <p id="services-text" data-aos="fade-up" data-aos-duration="1000" class="text-center mt-3"></p>
+         class="text-4xl font-extrabold tracking-tight text-center">Services</h2>
+      <p id="services-text" data-aos="fade-up" data-aos-duration="1000" class="text-center mt-3 max-[440px]:mb-5 max-[550px]:mx-3 max-[330px]:mx-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, distinctio.</p>
       <div data-aos="fade-up" data-aos-duration="1000"
          class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-         <div class="grid grid-cols-2 gap-10 text-center">
+         <div class="grid grid-cols-2 gap-10 text-center max-[370px]:grid-cols-1">
             <div class="flex flex-col gap-1">
                <i class="fa-regular fa-lightbulb text-4xl text-gray-800"></i>
                <p id="services-block1-title" class="font-bold text-lg">Title</p>
@@ -277,7 +277,7 @@
                <p id="services-block4-text">Lorem ipsum dolor sit amet.</p>
             </div>
          </div>
-         <div class="grid grid-cols-2 gap-4 mt-8">
+         <div class="grid grid-cols-2 gap-4 mt-8 max-[440px]:grid-cols-1">
             <img class="w-full rounded-lg" src="./assets/testimg/test4.webp" alt="office content 1">
             <img class="mt-4 w-full lg:mt-10 rounded-lg"
                src="https://media.istockphoto.com/id/1424912318/hu/fot%C3%B3/elfoglalt-millenniumi-szakmai-csoport-amely-%C3%A1ttekinti-a-startup-marketing-jelent%C3%A9seket.jpg?s=1024x1024&w=is&k=20&c=PE0lWKFPArkF2Fm7jh6tmrcR_G0OFifKUc3U5c7LIBM="
@@ -296,19 +296,18 @@
    <!-- CONTACT -->
 
    <section id="contact"
-      class="bg-slate-100 w-max rounded border border-slate-200 mx-auto my-20 shadow-xl main-container scroll-m-20">
-      <div class="flex justify-center items-center">
-         <div>
-            <iframe
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86723.54757514459!2d16.530260445827228!3d47.2144130683246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476eb84819ea8a61%3A0x400c4290c1e1260!2sSzombathely!5e0!3m2!1shu!2shu!4v1708938989979!5m2!1shu!2shu"
-               width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-               referrerpolicy="no-referrer-when-downgrade"></iframe>
-         </div>
-         <div class="flex flex-col px-10">
-            <h1 id="contact-title" class="text-3xl font-bold text-sky-700 mb-3">Contact Us</h1>
+      class="bg-slate-100 rounded border border-slate-200 mx-auto my-20 shadow-xl main-container scroll-m-20 max-[1260px]:mx-20 max-[530px]:mx-10 max-[380px]:mx-3">
+      <div class="flex justify-center items-center max-[1260px]:flex-col">
+         <iframe
+            class="w-[28rem] h-[28rem] max-[1260px]:w-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86723.54757514459!2d16.530260445827228!3d47.2144130683246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476eb84819ea8a61%3A0x400c4290c1e1260!2sSzombathely!5e0!3m2!1shu!2shu!4v1708938989979!5m2!1shu!2shu"
+            style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <div class="flex flex-col px-10 max-[1260px]:pb-5">
+            <h1 id="contact-title" class="text-3xl font-bold text-sky-700 mb-3 max-[1260px]:mt-8">Contact Us</h1>
             <p id="contact-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, voluptate.</p>
             <div class="border-b border-slate-200 mt-5"></div>
-            <div class="flex items-center mt-12 gap-3 grid grid-cols-3">
+            <div class="mt-12 gap-3 grid grid-cols-3 max-[900px]:grid-cols-1">
                <div
                   class="flex flex-col items-center justify-center p-3 rounded-lg hover:bg-slate-200 ease-in duration-200 cursor-pointer">
                   <i class="fa-solid fa-location-dot text-4xl text-sky-700"></i>
@@ -342,7 +341,7 @@
             title="C++ in 100 Seconds" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
-         <div class="grid grid-cols-2 gap-8 mt-5 justify-items-center">
+         <div class="grid grid-cols-2 gap-8 mt-5 justify-items-center max-[600px]:grid-cols-1">
             <div class="flex flex-col justify-start">
                <img class="rounded-xl border border-gray-300 mx-auto w-full" src="./assets/testimg/testabout2.jpg"
                   alt="">
@@ -371,7 +370,7 @@
    <!-- FOOTER -->
    <footer class="bg-gray-700">
       <div class="main-container mx-auto">
-         <div class="grid grid-cols-2 gap-10 justify-items-stretch text-white pt-10 mb-10">
+         <div class="grid grid-cols-2 gap-10 text-white pt-10 mb-10 max-[1200px]:grid-cols-1 max-[1200px]:px-10">
             <div class="flex flex-col items-start justify-center">
                <img src="assets/images/logo.png" class="h-8 mb-2" alt="Logo" />
                <p class="pl-1 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima placeat ut repudiandae, quod at fugit cum perferendis officia quaerat expedita?</p>
@@ -382,14 +381,14 @@
                   <a class="hover:text-gray-300 ease-in duration-100" href=""><i class="fa-brands fa-square-facebook"></i></a>
                </div>   
             </div>
-            <div class="grid grid-cols-2 justify-items-start">
+            <div class="grid grid-cols-2 justify-items-start max-[550px]:grid-cols-1">
                <div class="flex flex-col justify-start gap-1">
                   <h2 class="font-bold mb-2">Contact Us</h2>
                   <p>+36 00 000 0000</p>
                   <p>asd123@gmail.com</p>
                   <p>Szombathely Sárdi ér 00.</p>
                </div>
-               <div class="flex flex-col justify-start items-start gap-1">
+               <div class="flex flex-col justify-start items-start gap-1 max-[550px]:mt-5">
                   <h2 class="font-bold mb-2">Quick Links</h2>
                   <a class="text-gray-300 hover:text-sky-700 ease-in duration-200" href="#">Home</a>
                   <a class="text-gray-300 hover:text-sky-700 ease-in duration-200" href="#about">About</a>

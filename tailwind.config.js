@@ -7,7 +7,7 @@ module.exports = {
        extend: {
         width: {
           '128': '80rem',
-        }
+        },
        },
    },
    plugins: [require('flowbite/plugin')],
