@@ -149,6 +149,7 @@ function setLangEN() {
 	currentLang = "en";
 	console.log(currentLang);
 	changeText(currentLang);
+   document.getElementById("language-dropdown-menu").style.display = "none";
 }
 
 function setLangDE() {
@@ -156,6 +157,7 @@ function setLangDE() {
 	currentLang = "de";
 	console.log(currentLang);
 	changeText(currentLang);
+   document.getElementById("language-dropdown-menu").style.display = "none";
 }
 
 function setLangHU() {
@@ -163,6 +165,7 @@ function setLangHU() {
 	currentLang = "hu";
 	console.log(currentLang);
 	changeText(currentLang);
+   document.getElementById("language-dropdown-menu").style.display = "none";
 }
 
 function setLangFR() {
@@ -170,6 +173,7 @@ function setLangFR() {
 	currentLang = "fr";
 	console.log(currentLang);
 	changeText(currentLang);
+   document.getElementById("language-dropdown-menu").style.display = "none";
 }
 
 function getCookie(cname) {
@@ -193,7 +197,11 @@ $(document).ready(function () {
    $("#lang-en").click(setLangEN);
    $("#lang-fr").click(setLangFR);
    $("#lang-de").click(setLangDE);
+   $("#langBtn").click(function(){
+      document.getElementById("language-dropdown-menu").style.display = "inline-block";
+   });
    changeText(currentLang);
+   
 });
 
 function changeText(currentLang) {
@@ -236,6 +244,8 @@ function changeText(currentLang) {
         document.getElementById("contact-email-text").innerHTML = langSelector[currentLang].Section_contact_email_text;
         document.getElementById("contact-phone-title").innerHTML = langSelector[currentLang].Section_contact_phone_title;
         document.getElementById("contact-phone-text").innerHTML = langSelector[currentLang].Section_contact_phone_text;
+      //   inline-flex
+        
     } else {
         console.error("The language object for the selected language is undefined.");
     }
