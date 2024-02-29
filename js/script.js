@@ -41,3 +41,21 @@ window.addEventListener('scroll', function() {
       }
    });
 });
+
+var btn = $("#scrollBtn");
+ 
+$(window).scroll(function () {
+   
+  if ($(window).scrollTop() > 400) {
+    btn.addClass("show");
+    btn.removeClass("hidden");
+  } else {
+   btn.addClass("hidden");
+    btn.removeClass("show");
+  }
+});
+ 
+btn.on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, { duration: 100, delay: 300 });
+});
