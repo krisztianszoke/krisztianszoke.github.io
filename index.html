@@ -33,11 +33,11 @@
       <div id="stars">
          <div class="main-container grid grid-cols-2 z-50 h-full max-[600px]:flex max-[600px]:flex-col-reverse max-[600px]:justify-center max-[600px]:items-center max-[600px]:gap-10">
             <div class="flex flex-col-reverse mb-20 max-[600px]:m-0">
-               <a class="text-white p-2 border border-slate-200 place-self-start mb-20 ml-20 z-50 hover:bg-sky-800 ease-in duration-300 max-[600px]:place-self-center max-[600px]:m-0" href="#about">Read More</a>
+               <a id="hero-button" class="text-white p-2 border border-slate-200 place-self-start mb-20 ml-20 z-50 hover:bg-sky-800 ease-in duration-300 max-[600px]:place-self-center max-[600px]:m-0" href="#about">Read More</a>
             </div>
             <div class="flex flex-col items-end mr-10 mt-44 max-[600px]:m-0 max-[600px]:items-center">
-               <p class="text-right font-bold text-slate-100 text-5xl max-[1100px]:text-4xl max-[400px]:text-2xl max-[600px]:text-center">BLUESTELLAS</p>
-               <p class="text-slate-100 mt-10 text-right max-[600px]:text-center">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Rem, recusandae.</p>
+               <p id="hero-title" class="text-right font-bold text-slate-100 text-5xl max-[1100px]:text-4xl max-[400px]:text-2xl max-[600px]:text-center">BLUESTELLAS</p>
+               <p id="hero-text" class="text-slate-100 mt-10 text-right max-[600px]:text-center">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Rem, recusandae.</p>
             </div>
             <!-- <a href="#about" class="z-50">
                <div class="scroll-down">
@@ -352,8 +352,8 @@
 
    <section id="news" class="py-10 m-10 scroll-m-10">
       <div class="flex flex-col justify-center items-center gap-2 news-container">
-         <h1 class="text-4xl font-extrabold tracking-tight">News</h1>
-         <h2 class="text-sky-700 font-extrabold mb-8 ">Our latest News</h2>
+         <h1 id="news-title" class="text-4xl font-extrabold tracking-tight">News</h1>
+         <h2 id="news-text" class="text-sky-700 font-extrabold mb-8 ">Our latest News</h2>
          <iframe class="rounded-xl shadow-xl w-full h-96" src="https://www.youtube.com/embed/MNeX4EGtR5Y"
             title="C++ in 100 Seconds" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -363,18 +363,18 @@
                <img class="rounded-xl border border-gray-300 mx-auto w-full" src="./assets/testimg/testabout2.jpg"
                   alt="">
                <div class="pl-3 mt-1 flex flex-col justify-start items-start">
-                  <p class="text-gray-500">2023.01.01</p>
-                  <h1 class="font-bold tracking-tight text-xl mt-3">Title</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laudantium?</p>
+                  <p id="news-block2-date" class="text-gray-500">2023.01.01</p>
+                  <h1 id="news-block2-title" class="font-bold tracking-tight text-xl mt-3">Title</h1>
+                  <p id="news-block2-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laudantium?</p>
                </div>
             </div>
             <div class="flex flex-col justify-start">
                <img class="rounded-xl border border-gray-300 mx-auto w-full" src="./assets/testimg/testabout2.jpg"
                   alt="">
                <div class="pl-3 mt-1 flex flex-col justify-start items-start">
-                  <p class="text-gray-500">2023.01.01</p>
-                  <h1 class="font-bold tracking-tight text-xl mt-3">Title</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laudantium?</p>
+                  <p id="news-block3-date" class="text-gray-500">2023.01.01</p>
+                  <h1 id="news-block3-title" class="font-bold tracking-tight text-xl mt-3">Title</h1>
+                  <p id="news-block3-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, laudantium?</p>
                </div>
             </div>
          </div>
@@ -390,7 +390,7 @@
          <div class="grid grid-cols-2 gap-10 text-white pt-10 mb-10 max-[1200px]:grid-cols-1 max-[1200px]:px-10">
             <div class="flex flex-col items-start justify-center">
                <img src="assets/images/logo.png" class="h-8 mb-2" alt="Logo" />
-               <p class="pl-1 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima placeat ut repudiandae, quod at fugit cum perferendis officia quaerat expedita?</p>
+               <p id="footer-text" class="pl-1 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima placeat ut repudiandae, quod at fugit cum perferendis officia quaerat expedita?</p>
                <div class="flex justify-stretch items-center gap-5 mt-5 pl-3 text-xl">
                   <a class="hover:text-gray-300 ease-in duration-100" href=""><i class="fa-brands fa-square-facebook"></i></a>
                   <a class="hover:text-gray-300 ease-in duration-100" href=""><i class="fa-brands fa-square-facebook"></i></a>
@@ -400,21 +400,21 @@
             </div>
             <div class="grid grid-cols-2 justify-items-start max-[550px]:grid-cols-1">
                <div class="flex flex-col justify-start gap-1">
-                  <h2 class="font-bold mb-2">Contact Us</h2>
-                  <p>+36 00 000 0000</p>
-                  <p>asd123@gmail.com</p>
-                  <p>Szombathely Sárdi ér 00.</p>
+                  <h2 id="footer-contact-title" class="font-bold mb-2">Contact Us</h2>
+                  <p id="footer-contact-phone">+36 00 000 0000</p>
+                  <p id="footer-contact-email">asd123@gmail.com</p>
+                  <p id="footer-contact-location">Szombathely Sárdi ér 00.</p>
                </div>
                <div class="flex flex-col justify-start items-start gap-1 max-[550px]:mt-5">
-                  <h2 class="font-bold mb-2">Quick Links</h2>
-                  <a class="text-gray-300 hover:text-sky-700 ease-in duration-200" href="#">Home</a>
-                  <a class="text-gray-300 hover:text-sky-700 ease-in duration-200" href="#about">About</a>
-                  <a class="text-gray-300 hover:text-sky-700 ease-in duration-200" href="#contact">Contact</a>
+                  <h2 id="footer-links-title" class="font-bold mb-2">Quick Links</h2>
+                  <a id="footer-links-home" class="text-gray-300 hover:text-sky-700 ease-in duration-200" href="#">Home</a>
+                  <a id="footer-links-about" class="text-gray-300 hover:text-sky-700 ease-in duration-200" href="#about">About</a>
+                  <a id="footer-links-contact" class="text-gray-300 hover:text-sky-700 ease-in duration-200" href="#contact">Contact</a>
                </div>
             </div>
          </div>
       </div>
-      <p class="text-center text-white py-3 border-t-2 border-gray-600 w-80 mx-auto">© 2024 <a class="hover:underline text-sky-700" href="#">BlueStellas.</a> All Rights Reserved.</p>
+      <p id="footer-copyright" class="text-center text-white py-3 border-t-2 border-gray-600 w-80 mx-auto">© 2024 <a class="hover:underline text-sky-700" href="#">BlueStellas.</a> All Rights Reserved.</p>
    </footer>
 
 
