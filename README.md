@@ -7,7 +7,7 @@
   - [x] Language selector planning
   - [x] Section planning
 - [x] Animations through sections
-- [ ] Language selector
-  - [ ] Prepare JSONs
+- [x] Language selector
+  - [x] Prepare JSONs
   - [x] Javascript to change language
-  - [ ] Replace in the HTML Code
+  - [x] Replace in the HTML Code
